@@ -50,6 +50,20 @@
 
   --shadow-frame: 0 0 0 1px rgb(255 255 255 / 0.06), 0 32px 80px -24px rgb(0 0 0 / 0.85);
 
+  /* Keycaps: a lit top edge, a hard bottom edge, and a shadow it sits on.
+     Zuno is keyboard-driven — the buttons should feel like keys. */
+  --shadow-cap-light: inset 0 1px 0 rgb(255 255 255 / 0.9),
+    inset 0 -1px 0 rgb(0 0 0 / 0.12), 0 1px 0 rgb(0 0 0 / 0.55),
+    0 3px 8px -2px rgb(0 0 0 / 0.5);
+  --shadow-cap-light-hover: inset 0 1px 0 rgb(255 255 255 / 0.9),
+    inset 0 -1px 0 rgb(0 0 0 / 0.12), 0 2px 0 rgb(0 0 0 / 0.55),
+    0 6px 14px -3px rgb(0 0 0 / 0.55);
+  --shadow-cap-dark: inset 0 1px 0 rgb(255 255 255 / 0.08),
+    0 1px 0 rgb(0 0 0 / 0.6), 0 3px 8px -2px rgb(0 0 0 / 0.45);
+  --shadow-cap-dark-hover: inset 0 1px 0 rgb(255 255 255 / 0.1),
+    0 2px 0 rgb(0 0 0 / 0.6), 0 6px 14px -3px rgb(0 0 0 / 0.5);
+  --shadow-cap-press: inset 0 1px 2px rgb(0 0 0 / 0.3);
+
   --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
 }
 
