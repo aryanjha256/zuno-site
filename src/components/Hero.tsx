@@ -23,7 +23,7 @@ export const Hero = () => (
     >
       <motion.h1
         variants={fadeUp}
-        className="font-display mt-5 text-[clamp(2.75rem,7.5vw,5.5rem)] leading-[0.95] font-semibold tracking-[-0.04em] text-text max-w-5xl"
+        className="font-display max-w-4xl text-[clamp(2rem,4.6vw,3.5rem)] leading-[1.03] font-semibold tracking-[-0.035em] text-balance text-text"
       >
         A ridiculously fast API client. Native. Keyboard-driven.
       </motion.h1>
@@ -46,7 +46,7 @@ export const Hero = () => (
       initial={{ opacity: 0, y: 28 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.9, delay: 0.4, ease: easeOutExpo }}
-      className="mx-auto mt-[6vh] w-full max-w-[1400px] min-h-0 flex-1 px-5 sm:px-10"
+      className="mx-auto mt-[7vh] min-h-[clamp(220px,32vh,440px)] w-full max-w-[1400px] flex-1 px-5 sm:px-10"
     >
       <ScreenshotStack />
     </motion.div>
