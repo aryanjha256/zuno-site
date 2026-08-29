@@ -1,1 +1,75 @@
 @import "tailwindcss";
+
+/* Dark, editor-native palette. Neutrals are the warm zinc/stone pair from
+   zuno.svg (#18181B → #0C0A09); the accent matches the app's Send button and
+   the status colors match its response chrome. */
+@theme {
+  /* Neutrals — warm zinc, dark end first since the site lives there */
+  --color-ink-950: #09090b;
+  --color-ink-900: #0c0a09;
+  --color-ink-850: #121214;
+  --color-ink-800: #18181b;
+  --color-ink-700: #202024;
+  --color-ink-600: #27272a;
+  --color-ink-500: #3f3f46;
+  --color-ink-400: #52525b;
+  --color-ink-300: #71717a;
+  --color-ink-200: #a1a1aa;
+  --color-ink-100: #d4d4d8;
+  --color-ink-50: #f4f4f5;
+
+  /* Accent — the blue of the Send button */
+  --color-accent-50: #eef4ff;
+  --color-accent-200: #b9d0fb;
+  --color-accent-300: #8db2f7;
+  --color-accent-400: #5b8fef;
+  --color-accent-500: #3b74e0;
+  --color-accent-600: #2b5cbd;
+  --color-accent-700: #204796;
+
+  /* Response-chrome semantics */
+  --color-status-ok: #4ba97a;
+  --color-status-warn: #cf9b45;
+  --color-status-err: #d7605f;
+
+  /* Semantic surfaces */
+  --color-canvas: #0c0a09;
+  --color-surface: #121214;
+  --color-raised: #18181b;
+  --color-border: #232326;
+  --color-border-strong: #2e2e33;
+
+  /* Semantic text */
+  --color-text: #f4f4f5;
+  --color-text-muted: #a1a1aa;
+  --color-text-subtle: #71717a;
+
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-display: "Inter Tight", "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, "SF Mono", Menlo, monospace;
+
+  --shadow-frame: 0 0 0 1px rgb(255 255 255 / 0.06), 0 32px 80px -24px rgb(0 0 0 / 0.85);
+
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    color-scheme: dark;
+  }
+  body {
+    background-color: var(--color-canvas);
+    color: var(--color-text);
+    font-family: var(--font-sans);
+  }
+  ::selection {
+    background-color: var(--color-accent-500);
+    color: #fff;
+  }
+  :focus-visible {
+    outline: 2px solid var(--color-accent-400);
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+}
