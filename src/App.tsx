@@ -1,11 +1,16 @@
 import { Nav } from "./components/Nav";
 import { Hero } from "./components/Hero";
+import { Features } from "./components/Features";
+import { Footer } from "./components/Footer";
 
-/** Single viewport, no page scroll — the screenshot deck bleeds past the fold. */
 const App = () => (
-  <div className="flex h-[100svh] flex-col overflow-hidden">
+  <div className="min-h-svh overflow-x-clip">
     <Nav />
-    <Hero />
+    <main>
+      <Hero />
+      <Features />
+    </main>
+    <Footer />
   </div>
 );
 
