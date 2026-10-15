@@ -29,7 +29,7 @@ export const Hero = () => (
         variants={fadeUp}
         className="mt-5 max-w-xl text-[15px] leading-[1.6] text-balance text-text-muted sm:mt-6 sm:text-[16px]"
       >
-        Postman-level power with Zed-level feel. No account, no cloud — your
+        Postman-level power with Zed-level feel. No account, no cloud. Your
         requests are plain files you own, versioned in git.
       </motion.p>
 
