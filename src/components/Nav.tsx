@@ -9,9 +9,8 @@ import { easeOutExpo } from "../lib/motion";
 const REPO = "https://github.com/aryanjha256/zuno";
 
 const links = [
-  { label: "Docs", href: "#docs" },
-  { label: "Changelog", href: "#changelog", flag: "new" },
-  { label: "Releases", href: `${REPO}/releases` },
+  { label: "Docs", href: `${REPO}#readme` },
+  { label: "Changelog", href: `${REPO}/releases`, flag: "new" },
 ];
 
 export const Nav = () => {

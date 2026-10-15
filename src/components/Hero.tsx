@@ -1,6 +1,6 @@
 import { motion } from "motion/react";
-import { Button } from "./ui/Button";
-import { ScreenshotStack } from "./ScreenshotStack";
+import { DemoVideo } from "./DemoVideo";
+import { InstallCommand } from "./InstallCommand";
 import { easeOutExpo, fadeUp, stagger } from "../lib/motion";
 
 const REPO = "https://github.com/aryanjha256/zuno";
@@ -36,19 +36,25 @@ export const Hero = () => (
         that you forget it is there.
       </motion.p>
 
-      <motion.div variants={fadeUp} className="mt-8">
-        <Button href={REPO}>Download Zuno</Button>
+      <motion.div variants={fadeUp} className="mt-8 flex w-full flex-col items-center">
+        <InstallCommand />
+        <a
+          href={`${REPO}/releases/latest`}
+          className="mt-3 text-[13px] text-ink-300 transition-colors hover:text-text"
+        >
+          Or download a .deb, AppImage, tarball, .app or zip
+        </a>
       </motion.div>
     </motion.div>
 
-    {/* Takes the remaining height; the deck bleeds past the fold. */}
+    {/* Takes the remaining height; the video bleeds past the fold. */}
     <motion.div
       initial={{ opacity: 0, y: 28 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.9, delay: 0.4, ease: easeOutExpo }}
       className="mx-auto mt-[7vh] min-h-[clamp(220px,32vh,440px)] w-full max-w-[1400px] flex-1 px-5 sm:px-10"
     >
-      <ScreenshotStack />
+      <DemoVideo />
     </motion.div>
   </section>
 );

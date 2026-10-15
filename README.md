@@ -1,12 +1,13 @@
-# Zuno
+# zuno-site
 
-A ridiculously fast API client. Native, keyboard-driven, local-first — built in Rust on
-[GPUI](https://crates.io/crates/gpui).
+The landing page for [Zuno](https://github.com/aryanjha256/zuno), served at
+https://zuno.devaryan.com/. Vite, React and Tailwind.
 
-Postman-level capability, Zed-level feel: a virtualized response viewer that holds 60fps on
-multi-megabyte JSON, request tabs as editor buffers, curl import, response diffing, and
-collections stored as one file per request so they live in git like anything else you own.
+```bash
+npm install
+npm run dev      # local server
+npm run build    # type-check, then build into dist/
+npm run lint
+```
 
-[![Rust](https://github.com/aryanjha256/zuno/actions/workflows/rust.yml/badge.svg)](https://github.com/aryanjha256/zuno/actions/workflows/rust.yml)
-
-[![Release](https://github.com/aryanjha256/zuno/actions/workflows/release.yml/badge.svg)](https://github.com/aryanjha256/zuno/actions/workflows/release.yml)
+The hero video is `public/demo.mp4`, with `public/demo.jpg` as its poster.

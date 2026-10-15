@@ -7,6 +7,8 @@ const paths = {
   terminal: "m5 8 3.5 3.5L5 15M11.5 16H19",
   menu: "M4 7h16M4 12h16M4 17h16",
   close: "M6 6l12 12M18 6 6 18",
+  copy: "M9 9h10v10H9zM5 15V5h10",
+  check: "M5 12.5 10 17.5 19 7",
 } as const;
 
 export type IconName = keyof typeof paths;
