@@ -52,7 +52,7 @@ export const InstallCommand = () => {
         <span aria-hidden className="font-mono text-[13px] text-ink-400 select-none">
           $
         </span>
-        <code className="min-w-0 flex-1 overflow-x-auto font-mono text-[13px] whitespace-nowrap text-ink-100">
+        <code className="min-w-0 flex-1 overflow-x-auto [scrollbar-width:none] [&::-webkit-scrollbar]:hidden font-mono text-[13px] whitespace-nowrap text-ink-100">
           {command}
         </code>
         <button
